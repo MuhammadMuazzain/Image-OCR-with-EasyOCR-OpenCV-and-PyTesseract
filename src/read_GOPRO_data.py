@@ -125,4 +125,5 @@ with open('output/GOPRO_OCR.csv', 'w', newline='') as file:
         text = extract_text(image, verbose=0)  # Set verbose=1 to display images
 
         # Write the filename and text to the CSV file
-        writer.writerow([image_path, text])  # Write the full path to the CSV
+        # writer.writerow([image_path, text])  # Write the full path to the CSV
+        writer.writerow([image_path, text])
